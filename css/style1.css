@@ -40,7 +40,7 @@ h3{
 .table2 {
 	border-collapse: collapse;
 	background-color: #e3effd;
-	width: 50%;
+	width: 30%;
 	text-align: center;
 	
 }
@@ -51,5 +51,9 @@ img {
 }
 p {
    	font-weight: bold;
+	
+}
+.table2 td {
+	text-align: left;
 	
 }
