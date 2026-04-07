@@ -40,10 +40,13 @@ h3{
 .table2 {
 	border-collapse: collapse;
 	background-color: #e3effd;
+	width: 50%;
+	text-align: center;
 	
 }
 img {
 	border-radius: 10px;
+	display:block;
 
 }
 p {
