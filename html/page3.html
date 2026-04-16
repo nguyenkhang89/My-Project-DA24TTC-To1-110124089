@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="vi">
- <head>
-   <title> Trang web </title>
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="css/style3.css">
- </head>
- <body>
-   <div class="container">
-    <form id="frmDK">
-      <h3 class="title">Trang đăng kí <h3>
-   <div class="form-group>
-     <label for="txtUsername">Họ Tên</label>
-     <input class="form-control" type="text" id="txtUsername" name="txtUsername" placeholder="Nhập họ tên">
-   </div>
-   <div class="form-group">
-    <label for="lop">Lớp:</label>
-    <input type="text" id="mssv" name="mssv" placeholder="Nhập MSSV" >
-   </div>
-   <div class="form-group">
-   <label for="txtl">Lớp</label>
-    <select id="lop" required>
-           <option value="cml">Chọn Mã Lớp </option>
-           <option value="a">DA24TTA</option>
-           <option value="b">DA24TTB</option>
-           <option value="c">DA24TTC</option>
-           <option value="d">DA24TTD</option>
-    </select>
-   </div>
-   <div class="form-group>
-     <label for="txtDC">Địa chỉ</label>
-     <input class="form-control" type="text" id="txtDC" name="txtDC" placeholder="Nhập địa chỉ của bạn">
-   </div>
-   <div class="form-group>
-     <label for="txtSDT">Số điện thoại</label>
-     <input class="form-control" type="text" id="txtSDT" name="txtSDT" placeholder="Nhập số điện thoại của bạn">
-   </div>
-   <label for="txtGT">Giới tính</label>
-    <select id="GT" required>
-           <option value="cgt">Chọn Giới Tính</option>
-           <option value="Na">Nam</option>
-           <option value="Nu">Nữ</option>
-    </select>
-   </div>
-   <div class="form-group">
-    <label for="ns">Ngày sinh</label>
-    <input type="date" id="ns" name="ns">
-   </div>
-   <div class="form-group">
-    <label for="dm">Điểm mạnh</label> <br>
-    <input type="checkbox" name="chk_dm" id="chk_tkgd">
-    <label for="chk_tkgd">Thiết kế giao diện </label>
-    <input type="checkbox" name="chk_dm" id="chk_bcdd">
-    <label for="chk_bcdd">Bố cục di động </label>
-    <input type="checkbox" name="chk_dm" id="chk_lt">
-    <label for="chk_lt">Lập trình HTML/CSS </label>
-    <input type="checkbox" name="chk_dm" id="chk_slbtS">
-    <label for="chk_slbl">Sửa lỗi bài tập </label>
-   </div>
-   <div class="form-group>
-     <label for="email">Email</label>
-     <input class="form-control" type="email" id="emailT" name="email" placeholder="Nhập email của bạn">
-   </div>
-   <input class="button" type="submit" name="sbLogin" value="Đăng kí">
-   <input class="button" type="reset" name="rsCancel" value="Hủy bỏ">
-   </form>
-   </div>
- </body>
+<head>
+    <title>Trang web</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <form id="frmDK">
+            <h3 class="title">Trang đăng kí</h3>
+
+            <div class="form-group">
+                <label for="txtUsername">Họ Tên</label>
+                <input class="form-control" type="text" id="txtUsername" name="txtUsername" placeholder="Nhập họ tên">
+            </div>
+
+            <div class="form-group">
+                <label for="mssv">MSSV:</label>
+                <input class="form-control" type="text" id="mssv" name="mssv" placeholder="Nhập MSSV">
+            </div>
+
+            <div class="form-group">
+                <label for="lop">Lớp</label>
+                <select id="lop" class="form-control" required>
+                    <option value="cml">Chọn Mã Lớp</option>
+                    <option value="a">DA24TTA</option>
+                    <option value="b">DA24TTB</option>
+                    <option value="c">DA24TTC</option>
+                    <option value="d">DA24TTD</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="txtDC">Địa chỉ</label>
+                <input class="form-control" type="text" id="txtDC" name="txtDC" placeholder="Nhập địa chỉ của bạn">
+            </div>
+
+            <div class="form-group">
+                <label for="txtSDT">Số điện thoại</label>
+                <input class="form-control" type="text" id="txtSDT" name="txtSDT" placeholder="Nhập số điện thoại của bạn">
+            </div>
+
+            <div class="form-group">
+                <label for="GT">Giới tính</label>
+                <select id="GT" class="form-control" required>
+                    <option value="cgt">Chọn Giới Tính</option>
+                    <option value="Na">Nam</option>
+                    <option value="Nu">Nữ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ns">Ngày sinh</label>
+                <input class="form-control" type="date" id="ns" name="ns">
+            </div>
+
+            <div class="form-group">
+                <label>Điểm mạnh</label> <br>
+                <input type="checkbox" name="chk_dm" id="chk_tkgd">
+                <label for="chk_tkgd">Thiết kế giao diện</label>
+                <input type="checkbox" name="chk_dm" id="chk_bcdd">
+                <label for="chk_bcdd">Bố cục di động</label>
+                <input type="checkbox" name="chk_dm" id="chk_lt">
+                <label for="chk_lt">Lập trình HTML/CSS</label>
+                <input type="checkbox" name="chk_dm" id="chk_slbtS">
+                <label for="chk_slbtS">Sửa lỗi bài tập</label>
+            </div>
+
+            <div class="form-group">
+                <label for="emailT">Email</label>
+                <input class="form-control" type="email" id="emailT" name="email" placeholder="Nhập email của bạn">
+            </div>
+
+            <div class="buttons">
+                <input class="button" type="submit" name="sbLogin" value="Đăng kí">
+                <input class="button" type="reset" name="rsCancel" value="Hủy bỏ">
+            </div>
+        </form>
+    </div>
+</body>
 </html>
