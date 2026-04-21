@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+   <title>Thiết kế bảng cửu chương </title>
+   <meta charset="utf-8">
+ </head>
+ <body>
+    <form id="frmInBangCC">
+        <h2 class="title">In bảng cửu chương</h2>
+        <div>
+            <label for="txtNS">Nhập số </label>
+            <input  type="text" id="txtNS" name="txtNS" placeholder="Nhập số">
+            <input  type="button"  value="In" onclick="inBCC()">
+        </div>
+        <div id="kq">
+        </div>
+    </form>
+    <script>
+        function inBCC ()
+        {
+        const frm=document.forms["frmInBangCC"];
+        let so = parseInt(frm["txtNS"].value);
+        let kq="";
+        for( let i=1;i<=10;i++)
+    {
+        kq += so +" x "+i+" = "+(so*i)+"<br>";
+    }
+    document.getElementById("kq").innerHTML=kq;
+}
+    </script>
+ </body>
+</html>
