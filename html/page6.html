@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+   <title>Text createElement(Tạo thẻ mới trong body bằng script) </title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="../css/style4.css">
+ </head>
+ <body>
+    <script>
+        //tạo 1 thẻ div
+        const newDiv = document.createElement("div");
+        //Gắn thuộc tính vào newDiv
+        newDiv.setAttribute("class","product-item");
+        //tạo 1 thẻ div chứa ảnh
+        const productImage = document.createElement("div");
+        //Gắn thuộc tính cho thẻ div chứa ảnh
+        productImage.setAttribute("class","product-image");
+        //1.Tạo ảnh
+        const productImageNode =document.createElement("img");
+        productImageNode.setAttribute("src","../assets/images/haily.jpeg");
+        //Gắn hình vào trong thẻ div chứa ảnh
+        productImage.appendChild(productImageNode);
+        //Gắn thẻ div chứa ảnh vào newDiv
+        newDiv.appendChild(productImage);
+        //tạo thẻ div chứa thông tin hàng hóa
+        const productInfo=document.createElement("div");
+        //gắn thuộc tính cho thẻ div chứa thông tin hàng hóa
+        productInfo.setAttribute("class","product-info");
+        //tạo tên 
+        const productInfoName=document.createElement("p");
+        productInfoName.setAttribute("class","product-name");
+        productInfoName.textContent ="Thú mỏ vịt ";
+        productInfo.appendChild(productInfoName);
+
+        //tạo giá tiền
+        const productInfoPrice=document.createElement("p");
+        productInfoPrice.setAttribute("class","product-Price");
+        productInfoPrice.textContent ="1.000.000.000"
+        productInfo.appendChild(productInfoPrice);
+
+        //tạo link
+        const productInfoLink=document.createElement("a");
+        productInfoLink.setAttribute("class","productInfor-Link");
+        productInfoLink.setAttribute("href", "https://vi.wikipedia.org/wiki/T%E1%BA%ADp_tin:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg");
+        productInfoLink.textContent = "Xem chi tiết";
+        productInfo.appendChild(productInfoLink);
+      
+
+       //Gắn thẻ div chứa thông tin hàng hóa vào newDiv
+        newDiv.appendChild(productInfo);
+        document.body.appendChild(newDiv);
+    </script>
+ 
+ </body>
+</html>
