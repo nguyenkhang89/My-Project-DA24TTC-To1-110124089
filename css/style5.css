@@ -1,0 +1,84 @@
+/* Tùy chỉnh khung chứa danh sách sản phẩm */
+#product-list {
+    padding: 40px 0;
+    gap: 20px 0; /* Khoảng cách giữa các hàng */
+}
+
+/* Hiệu ứng cho từng thẻ sản phẩm */
+.product-item {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Nhấc nhẹ sản phẩm lên khi hover */
+}
+
+/* Bo góc và đổ bóng cho phần hình ảnh */
+.product-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    position: relative;
+    z-index: 1;
+}
+
+.product-image img {
+    transition: transform 0.5s ease;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.1); /* Phóng to nhẹ hình ảnh khi hover */
+}
+
+/* Phần thông tin sản phẩm */
+.product-info {
+    padding: 15px 10px;
+}
+
+/* Tên sản phẩm */
+.product-info p:first-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* Giá sản phẩm */
+.product-info p:nth-child(2) {
+    color: #e74c3c; /* Màu đỏ cho giá tiền */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Giá có thêm đơn vị VNĐ */
+.product-info p:nth-child(2)::after {
+    content: " ₫";
+    font-size: 0.9rem;
+}
+
+/* Nút "Xem chi tiết" */
+.btn-outline-info {
+    border-radius: 20px; /* Bo tròn nút */
+    padding: 5px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #17a2b8;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 0 5px 15px rgba(23, 162, 184, 0.4);
+}
+
+/* Responsive nhỏ cho di động */
+@media (max-width: 576px) {
+    .product-info p:first-child {
+        font-size: 0.9rem;
+    }
+    .product-info p:nth-child(2) {
+        font-size: 1rem;
+    }
+}
